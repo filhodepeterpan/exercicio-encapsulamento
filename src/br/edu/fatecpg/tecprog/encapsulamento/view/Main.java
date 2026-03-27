@@ -28,5 +28,24 @@ public class Main {
         conta.sacar(3000);
         conta.sacar(4340.00);
         conta.sacar(9000.00);
+
+        // Produto
+        Produto produto = new Produto("Airfreyer", 549.90, 22);
+
+        System.out.println(produto);
+
+        produto.setPreco(-2);
+        System.out.println(produto);
+
+        produto.setQuantidadeEstoque(-10);
+        System.out.println(produto);
+
+        System.out.println(produto.comprar(25));
+
+        System.out.println(produto.comprar(2));
+        System.out.println(produto);
+
+        System.out.println(produto.comprar(20));
+        System.out.println(produto);
     }
 }
